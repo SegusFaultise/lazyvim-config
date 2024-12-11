@@ -10,10 +10,14 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- Configure LazyVim to load gruvbox
+  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = {
+    contrast = "hard"
+  }},
+  
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "lunaperche",
+      colorscheme = "gruvbox",
     },
   },
 
