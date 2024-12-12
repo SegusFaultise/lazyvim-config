@@ -20,7 +20,7 @@ return {
       colorscheme = "gruvbox",
     },
   },
-
+  
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -39,6 +39,16 @@ return {
     opts = function(_, opts)
       table.insert(opts.sources, { name = "emoji" })
     end,
+  },
+
+  {
+  "akinsho/bufferline.nvim",
+    enabled = false,
+  },
+
+  {
+     "nvim-neo-tree/neo-tree.nvim",
+    enabled = false,
   },
 
   -- change some telescope options and a keymap to browse plugin files
